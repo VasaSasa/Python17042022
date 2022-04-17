@@ -106,6 +106,17 @@
 #an empty rectangle (only its sides are displayed). The length
 #and width are equal to the typed in numbers.
 
+width_rectangle = int(input("Enter width of rectangle: "))
+height_rectangle = int(input("Enter height of rectangle: "))
+symbol = "*"
+
+for i in range(height_rectangle): # rows
+    for j in range(width_rectangle): # column10
+        if i == 0 or j == 0 or i == height_rectangle - 1 or j == width_rectangle - 1:
+            print(symbol, end="")
+        else:
+            print(" ", end="")
+    print()
 
 
 
